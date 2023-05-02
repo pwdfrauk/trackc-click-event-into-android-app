@@ -22,6 +22,7 @@
     <script>
         document.getElementById("printButton").addEventListener("click", function () {
             if (typeof Android !== 'undefined') {
+                // this method will call form android method
                 Android.printPdf(window.location.href, document.title, document.documentElement.outerHTML, document.URL, document.referrer, webView);
             }
         });
