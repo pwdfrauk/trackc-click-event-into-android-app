@@ -18,10 +18,8 @@
 
     <script>
         document.getElementById("printButton").addEventListener("click", function() {
-            console.log("button click from website");
             if (typeof Android !== 'undefined') {
                 Android.printPdf();
-                console.log("button click from android")
             }
         });
     </script>
